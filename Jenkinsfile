@@ -16,6 +16,11 @@ pipeline{
             '''
           }
          }
+         stage("Test") {
+            steps {
+                echo "Test Aditya"
+            }
+        }
          stage("PR branch") {
           when {
             branch "PR-*"
